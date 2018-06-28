@@ -32,7 +32,7 @@ class CashRegister
   end
   
 def items
-  @@all.map {|register| register.items}
+  @@all.map {|register| register.item}
 end
 
 end
