@@ -1,7 +1,7 @@
 require 'pry'
 
 class CashRegister
-  attr_accessor :items, :transaction, :price, :quantity, :total, :discount
+  attr_accessor :items, :old_total, :old_items, :price, :quantity, :total, :discount
   @@all = []
   
   def self.all
