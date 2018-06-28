@@ -32,9 +32,4 @@ class CashRegister
     end
   end
   
-def items
-  @@all.map {|register| register.item}
-  binding.pry
-end
-
 end
