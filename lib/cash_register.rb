@@ -18,6 +18,8 @@ class CashRegister
   end
 
   def add_item(item, price, quantity = 1)
+    @old_total = @total
+    @old_items = @items
     @total = @total + (price * quantity)
     new = Array.new(quantity,item)
     @items.concat(new)
