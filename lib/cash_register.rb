@@ -1,3 +1,5 @@
+require 'pry'
+
 class CashRegister
   attr_accessor :item, :transaction, :price, :quantity, :total, :discount
   @@all = []
