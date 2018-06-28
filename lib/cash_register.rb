@@ -22,7 +22,7 @@ class CashRegister
   end
   
   def apply_discount
-    if self.include?(@discount)
+    if self.discount != nil
       self.total = (1-(self.discount.to_f/100)) * self.total
       "After the discount, the total comes to $#{self.total.to_i}."
     else
