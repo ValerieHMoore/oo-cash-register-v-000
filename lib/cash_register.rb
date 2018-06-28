@@ -8,7 +8,7 @@ class CashRegister
     @@all
   end
   
-  def initialize(discount = 20, total = 0)
+  def initialize(discount = 0, total = 0)
     @item = item
     @transaction = transaction
     @price = price
