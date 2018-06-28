@@ -9,7 +9,7 @@ class CashRegister
   end
   
   def initialize(discount = nil, total = 0)
-    @item = item
+    #@item = item
     @transaction = transaction
     @price = price
     @quantity = quantity
