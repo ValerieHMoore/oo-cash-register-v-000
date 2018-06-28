@@ -20,8 +20,8 @@ class CashRegister
 
   def add_item(item, price, quantity = 1)
     @total = @total + (price * quantity)
-    new = Array.new
-    @items << item * quantity
+    new = Array.new(quantity,item)
+    @items.concat(new)
   end
   
   def apply_discount
