@@ -2,11 +2,6 @@ require 'pry'
 
 class CashRegister
   attr_accessor :items, :old_total, :old_items, :price, :quantity, :total, :discount
-  # @@all = []
-  
-  # def self.all
-  #   @@all
-  # end
   
   def initialize(discount = nil, total = 0)
     @items = []
@@ -14,7 +9,6 @@ class CashRegister
     @quantity = quantity
     @total = total
     @discount = discount
-    #@@all << self
   end
 
   def add_item(item, price, quantity = 1)
