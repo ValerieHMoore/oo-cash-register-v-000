@@ -22,6 +22,7 @@ class CashRegister
     @total = @total + (price * quantity)
     new = Array.new(quantity,item)
     @items.concat(new)
+    @items
   end
   
   def apply_discount
